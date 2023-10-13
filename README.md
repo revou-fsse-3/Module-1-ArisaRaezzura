@@ -21,12 +21,14 @@ I'm an active student at RevoU. I spent my time by listening to musics, reading,
 3. (soon) Computer Science and Software Engineering
 
 ### My Favorite Website
-|Name     |Link                      |Use                                   |
-|---------|--------------------------|--------------------------------------|
-|Google   |https://www.google.com/   |Source of information and knowledge   |
-|GitHub   |https://github.com/       |Search and upload code                |
-|Twitter  |https://twitter.com/      |Updated news from around the world    |
-|Instagram|https://www.instagram.com/|Interact with followers and colleagues|
+|Name     |Link                      |Use                                         |
+|---------|--------------------------|--------------------------------------------|
+|Google   |https://www.google.com/   |Source of information and knowledge         |
+|GitHub   |https://github.com/       |Search and upload code                      |
+|Twitter  |https://twitter.com/      |Updated news from around the world          |
+|Instagram|https://www.instagram.com/|Interact with followers and colleagues      |
+|YouTube  |https://www.youtube.com/  |Watch videos for knowledge and entertainment|
+|Spotify  |https://open.spotify.com/ |Playing music                               |
 
 
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/bwEfZG3u)
