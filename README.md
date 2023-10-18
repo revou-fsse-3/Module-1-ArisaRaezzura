@@ -5,7 +5,7 @@
 ### My Bio
 Hello there! I'm Arisa Raezzura Zahra also known as Rae.
 
-![myPicture](myPicture.jpg)
+![myPicture](./Assets/myPicture.jpg)
 
 I'm an active student at RevoU. I spent my time by listening to musics, reading, and often doing private tutoring. I have lots of interest in Computer Science and Software Engineering which hopefully soon will be my undergraduate major.
 
@@ -29,6 +29,5 @@ I'm an active student at RevoU. I spent my time by listening to musics, reading,
 |Instagram|https://www.instagram.com/|Interact with followers and colleagues      |
 |YouTube  |https://www.youtube.com/  |Watch videos for knowledge and entertainment|
 |Spotify  |https://open.spotify.com/ |Playing music                               |
-
 
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/bwEfZG3u)

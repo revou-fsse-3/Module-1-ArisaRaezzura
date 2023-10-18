@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFF2D8;
+    color: #113946;
+    margin: 0px;
+}
+
+h1 {
+    font-size: 150px;
+    font-family: "Brush Script MT", cursive;
+    margin: 0px;
+}
+
+h2 {
+    font-size: 47px;
+    margin: 0px;
+    padding: 50px;
+    padding-bottom: 20px;
+}
+
+h3 {
+    font-size: 30px;
+    margin-left: 85px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 23px;
+    font-family: cursive;
+    margin: 0px;
+}
+
+
+/* Footer */
+footer {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* header */
+nav {
+    background-color: #113946;
+    display: flex;
+    justify-content: right;
+}
+
+nav>a {
+    padding: 13px;
+    color: #FFF2D8;
+}
+
+#home {
+    background-color: #BCA37F;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Top Books */
+section.books {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 85px;
+    margin-right: 85px;
+}
+
+div.books {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+div>img {
+    border-radius: 5%;
+    height: 250px;
+}
+
+div>a {
+    margin: 20px;
+    font-size: 18px;
+}
+
+
+/* Movie Recommendation */
+iframe {
+    margin-left: 115px;
+    margin-bottom: 25px;
+}
+
+
+/* Random Facts */
+
+
+/* Fanbase Form */
+section.joinUs {
+    margin-left: 85px;
+}
+
+div.form {
+    display: flex;
+    height: 40px;
+    align-items: center;
+}
+
+label {
+    width: 150px;
+    font-size: 20px;
+}
+
+input {
+    height: 30px;
+    margin: 3px;
+    width: 250px;
+    box-sizing: border-box;
+    border: 2px solid #BCA37F;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+input#women,
+input#men {
+    width: 18px;
+    margin-right: 10px;
+}
+
+label.women {
+    width: 100px;
+}
+
+div.message {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    height: 130px;
+}
+
+textarea {
+    margin: 3px;
+    width: 250px;
+    box-sizing: border-box;
+    border: 2px solid #BCA37F;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+button {
+    height: 30px;
+    margin: 3px;
+    box-sizing: border-box;
+    border: 2px solid #113946;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 20px;
+    width: 400px;
+    background-color: #EAD7BB;
+    color: #113946;
+}
+
+button:focus {
+    background-color: #BCA37F;
+}

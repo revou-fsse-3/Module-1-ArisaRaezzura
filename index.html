@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookworms</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a class="nav" href="#topBooks">Top Books</a>
+            <a href="#movieRecs">Movies</a>
+            <a href="#randomFacts">Facts</a>
+            <a href="#fanbase">Fanbase</a>
+        </nav>
+        <section id="home">
+            <h1>Bookworms</h1>
+            <p>a safe place for readers to share their books</p>
+        </section>
+    </header>
+    <main>
+        <section id="topBooks">
+            <h2>Our Top Picks</h2>
+            <section class="books">
+                <div class="books">
+                    <img src="./Assets/heartbeat.jpg" alt="Heartbeat by ">
+                    <a>Heartbeat</a>
+                </div>
+                <div class="books">
+                    <img src="./Assets/myNameIsLuca.jpg" alt="My Name is Luca by ">
+                    <a>My Name is Luca</a>
+                </div>
+                <div class="books">
+                    <img src="./Assets/percyJackson.jpg" alt="Percy Jackson by ">
+                    <a>Percy Jackson</a>
+                </div>
+            </section>
+        </section>
+        <section id="movieRecs">
+            <h2>Check Out Some Movie Adaptation Recommendation</h2>
+            <h3>Harry Potter</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VyHV0BRtdxo?si=0T8f30rIjxI-I7Sk"
+                title="Harry Potter and the Sorcerer's Stone" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <h3>Percy Jackson</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gA8RMj1l0yg?si=yJ_UaSHNyh2V0r71"
+                title="Percy Jackson and The Olympians" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <h3>Sin</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/DTtaFo9bDbs?si=U2OdYyLaGrM2Bp_R"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </section>
+        <section id="randomFacts">
+            <h2>Random Fun Facts You Should Know</h2>
+        </section>
+        <section id="fanbase">
+            <h2>Let's Join Our Club and Have Some Fun</h2>
+            <section class="joinUs">
+                <div class="form">
+                    <label for="email">Email : </label>
+                    <input id="email" type="email" placeholder="Email">
+                </div>
+                <div class="form">
+                    <label for="name">Full Name : </label>
+                    <input id="name" type="text" placeholder="Name">
+                </div>
+                <div class="form">
+                    <label for="gender">Gender : </label>
+                    <input id="women" type="radio" name="gender" value="women">
+                    <label class="women" for="women">Women</label>
+                    <input id="men" type="radio" name="gender" value="men">
+                    <label class="men" for="men">Men</label>
+                </div>
+                <div class="form">
+                    <label for="book">Favorite Book : </label>
+                    <input id="book" type="text" placeholder="Favorite Book">
+                </div>
+                <div class="message">
+                    <label for="message">Message : </label>
+                    <textarea id="message" rows="10" cols="30"></textarea>
+                </div>
+                <div class="form">
+                    <button onclick="submit()">Submit</button>
+                </div>
+                <p id="error"></p>
+            </section>
+        </section>
+    </main>
+    <footer>created by: arisarae24</footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
