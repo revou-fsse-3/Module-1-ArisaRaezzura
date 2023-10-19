@@ -84,8 +84,10 @@ div>img {
 }
 
 div>a {
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-size: 18px;
+    color: #113946
 }
 
 
@@ -94,9 +96,6 @@ iframe {
     margin-left: 115px;
     margin-bottom: 25px;
 }
-
-
-/* Random Facts */
 
 
 /* Fanbase Form */

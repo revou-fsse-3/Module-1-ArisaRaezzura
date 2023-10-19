@@ -5,7 +5,7 @@
 ### My Bio
 Hello there! I'm Arisa Raezzura Zahra also known as Rae.
 
-![myPicture](./Assets/myPicture.jpg)
+![myPicture](./myPicture.jpg)
 
 I'm an active student at RevoU. I spent my time by listening to musics, reading, and often doing private tutoring. I have lots of interest in Computer Science and Software Engineering which hopefully soon will be my undergraduate major.
 
