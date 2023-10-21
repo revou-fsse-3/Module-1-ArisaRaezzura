@@ -32,14 +32,6 @@ p {
 }
 
 
-/* Footer */
-footer {
-    margin-top: 25px;
-    display: flex;
-    justify-content: center;
-}
-
-
 /* header */
 nav {
     background-color: #113946;
@@ -165,4 +157,16 @@ button {
 
 button:focus {
     background-color: #BCA37F;
+}
+
+#error {
+    margin-top: 20px;
+}
+
+
+/* Footer */
+footer {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
 }
