@@ -74,8 +74,8 @@ div.books {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 15px;
-    margin-left: 15px;
+    /* margin-right: 15px;
+    margin-left: 15px; */
 }
 
 div>img {
@@ -165,4 +165,36 @@ button {
 
 button:focus {
     background-color: #BCA37F;
+}
+/* mobile only */
+@media only screen and (max-width: 480px) {
+    section div.books {
+        width: calc(100% / 1) !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    section div.books {
+        width: calc(100% / 2);
+    }
+}
+
+/* tablet */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    section div.books {
+        width: calc(100% / 4);
+    }
+}
+
+/* laptop or pc */
+@media only screen and (min-width: 1024px) {
+    section div.books {
+        width: calc(100% / 5);
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    section div.books {
+        width: calc(100% / 6);
+    }
 }
