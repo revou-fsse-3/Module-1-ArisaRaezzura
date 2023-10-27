@@ -4,9 +4,9 @@ function submit() {
     const book = document.getElementById("book").value;
     const message = document.getElementById("message").value;
     if (email == "" || name == "" || book == "" || message == "") {
-        document.getElementById("error").innerHTML = "Please finish up the form before submitting.";
+        prompt("Please finish up the form before submitting.");
     }
     else {
-        document.getElementById("error").innerHTML = "From submitted succesfully! Congratulation " + name + "!";
+        prompt("Form submitted succesfully! Congratulation " + name + "!");
     }
 }
