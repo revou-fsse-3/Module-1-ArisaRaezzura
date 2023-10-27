@@ -3,26 +3,34 @@ body {
     background-color: #FFF2D8;
     color: #113946;
     margin: 0px;
+    text-align: center;
+}
+
+.logo {
+    font-family: "Brush Script MT", cursive;
 }
 
 h1 {
-    font-size: 150px;
-    font-family: "Brush Script MT", cursive;
+    font-size: 125px;
     margin: 0px;
+    text-shadow: 2px 2px 5px #EAD7BB;
 }
 
 h2 {
     font-size: 47px;
     margin: 0px;
-    padding: 50px;
-    padding-bottom: 20px;
+    padding: 85px 0px 30px 0px;
 }
 
 h3 {
     font-size: 30px;
-    margin-left: 85px;
     margin-top: 0px;
     margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 25px;
+    margin: 0px 0px 15px 0px;
 }
 
 p {
@@ -32,125 +40,120 @@ p {
 }
 
 
-/* header */
-nav {
-    background-color: #113946;
+/* Navigation Bar */
+header {
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
+    background-color: #113946;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
 }
 
-nav>a {
-    padding: 13px;
+nav {
+    display: flex;
+}
+
+header a {
+    display: flex;
+    align-items: center;
+    margin: 13px;
     color: #FFF2D8;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+a.logo {
+    font-size: 35px;
+    margin-left: 20px;
+}
+
+
+/* Introduction and Join */
+.background {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(./Assets/backgroundLibrary.jpg) center;
+    opacity: 0.4;
+    width: 100%;
+    height: 550px;
 }
 
 #home {
-    background-color: #BCA37F;
-    height: 350px;
+    margin-top: 70px;
+    height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro {
+    width: 60%;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-
-/* Top Books */
-section.books {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 85px;
-    margin-right: 85px;
+.intro p {
+    font-weight: bold;
+    text-shadow: 1px 1px 3px #EAD7BB, 0 0 25px black;
 }
 
-div.books {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 15px;
-    margin-left: 15px;
+div.joinUs {
+    width: 321px;
+    padding: 35px;
+    background: rgba(188, 163, 127, 0.9);
+    border-radius: 10px;
+    margin-left: 10px;
 }
 
-div>img {
-    border-radius: 5%;
-    height: 250px;
-}
-
-div>a {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 18px;
-    color: #113946
-}
-
-
-/* Movie Recommendation */
-iframe {
-    margin-left: 115px;
-    margin-bottom: 25px;
-}
-
-
-/* Fanbase Form */
-section.joinUs {
-    margin-left: 85px;
-}
-
+/* Form Join */
 div.form {
+    margin-bottom: 10px;
     display: flex;
-    height: 40px;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 label {
-    width: 150px;
-    font-size: 20px;
+    display: flex;
+    width: 115px;
+    font-size: 17px;
+    align-items: center;
 }
 
 input {
     height: 30px;
-    margin: 3px;
-    width: 250px;
+    margin-left: 3px;
+    width: 200px;
     box-sizing: border-box;
     border: 2px solid #BCA37F;
-    border-radius: 5px;
-    font-size: 18px;
-}
-
-input#women,
-input#men {
-    width: 18px;
-    margin-right: 10px;
-}
-
-label.women {
-    width: 100px;
-}
-
-div.message {
-    display: flex;
-    flex-direction: row;
-    margin-top: 10px;
-    height: 130px;
+    font-size: 15px;
 }
 
 textarea {
     margin: 3px;
-    width: 250px;
+    width: 200px;
+    height: 100px;
     box-sizing: border-box;
     border: 2px solid #BCA37F;
-    border-radius: 8px;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 button {
     height: 30px;
-    margin: 3px;
     box-sizing: border-box;
-    border: 2px solid #113946;
+    border: 2px solid #BCA37F;
     border-radius: 5px;
-    font-size: 18px;
-    margin-top: 20px;
-    width: 400px;
+    font-size: 15px;
+    width: 321px;
     background-color: #EAD7BB;
     color: #113946;
 }
@@ -164,9 +167,237 @@ button:focus {
 }
 
 
+/* Top Books */
+#topBooks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.books {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+}
+
+div.books {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% / 6);
+}
+
+div img {
+    border-radius: 5%;
+    height: 250px;
+}
+
+div a {
+    margin: 20px 0px;
+    font-size: 18px;
+    color: #113946;
+    text-align: center;
+}
+
+
+/* Movie Recommendation */
+#movieRecs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.movie {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 0px;
+}
+
+article {
+    width: 525px;
+}
+
+iframe {
+    width: 525px;
+    height: 300px;
+}
+
+
 /* Footer */
 footer {
     margin-top: 25px;
     display: flex;
     justify-content: center;
+}
+
+
+/*** Responsive ***/
+
+/* Tablet */
+@media only screen and (max-width: 1280px) {
+    .intro {
+        width: 50%;
+    }
+
+    h1 {
+        font-size: 100px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    div.form {
+        flex-direction: column;
+    }
+
+    textarea {
+        height: 60px;
+    }
+
+    button {
+        width: 203px;
+    }
+
+    div.joinUs {
+        width: 203px;
+    }
+
+    div.books {
+        width: calc(100% / 3);
+        margin-bottom: 25px;
+    }
+
+    div.movie {
+        width: 75%;
+        margin: 40px 0px;
+    }
+
+    article {
+        width: 350px;
+    }
+
+    iframe {
+        width: 350px;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 975px) {
+    div.movie {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    div.movie {
+        width: 85%;
+        margin: 40px 0px;
+    }
+
+    article {
+        width: 325px;
+    }
+
+    iframe {
+        width: 325px;
+        height: 180px;
+    }
+}
+
+
+/* Phone */
+@media only screen and (max-width: 850px) {
+    header {
+        height: 50px;
+    }
+
+    #home {
+        margin-top: 50px;
+        height: 700px;
+        flex-direction: column;
+    }
+
+    .background {
+        height: 750px;
+    }
+
+    .intro {
+        width: 100%;
+    }
+
+    h4 {
+        font-size: 22px;
+    }
+
+    div.joinUs {
+        width: 321px;
+        margin: 75px 0px 0px 0px;
+    }
+
+    div.form {
+        flex-direction: row;
+    }
+
+    textarea {
+        height: 100px;
+    }
+
+    button {
+        width: 321px;
+    }
+
+    div.books {
+        width: calc(100% / 2);
+    }
+
+    div.movie {
+        margin: 20px 0px;
+        flex-direction: column;
+    }
+
+    article {
+        width: 80%;
+    }
+
+    iframe {
+        width: 80%;
+        height: 300px;
+        margin: 15px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    iframe {
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    iframe {
+        height: 230px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    iframe {
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    article {
+        width: 85%;
+    }
+
+    iframe {
+        width: 85%;
+        height: 190px;
+    }
 }

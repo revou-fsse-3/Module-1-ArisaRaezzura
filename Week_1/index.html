@@ -9,18 +9,53 @@
 </head>
 
 <body>
+
+    <!-- Navigation Bar -->
     <header>
+        <a href="#home" class="logo">Bookworms</a>
         <nav>
+            <a href="#home">Join Us</a>
             <a href="#topBooks">Top Books</a>
             <a href="#movieRecs">Movies</a>
-            <a href="#fanbase">Fanbase</a>
         </nav>
-        <section id="home">
-            <h1>Bookworms</h1>
-            <p>a safe place for readers to share their books</p>
-        </section>
     </header>
+
+    <!-- Content -->
     <main>
+        <!-- Introduction and Join -->
+        <section id="home">
+            <div class="background"></div>
+            <div class="intro">
+                <h1 class="logo">Bookworms</h1>
+                <p>a safe place for book nerds</p>
+            </div>
+            <div class="joinUs">
+                <h4>Let's Join Our Club and Have Some Fun</h4>
+                <form class="joinUs">
+                    <div class="form">
+                        <label for="email">Email : </label>
+                        <input id="email" type="email" placeholder="Email">
+                    </div>
+                    <div class="form">
+                        <label for="name">Full Name : </label>
+                        <input id="name" type="text" placeholder="Name">
+                    </div>
+                    <div class="form">
+                        <label for="book">Favorite Book : </label>
+                        <input id="book" type="text" placeholder="Favorite Book">
+                    </div>
+                    <div class="form">
+                        <label for="message">Message : </label>
+                        <textarea id="message" rows="10" cols="30"></textarea>
+                    </div>
+                    <div class="form">
+                        <button onclick="submit()">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Top Picks Book -->
         <section id="topBooks">
             <h2>Our Top Picks</h2>
             <section class="books">
@@ -52,55 +87,46 @@
                 </div>
             </section>
         </section>
+
+        <!-- Movie Recommendation -->
         <section id="movieRecs">
             <h2>Check Out Some Movie Adaptation Recommendation</h2>
-            <h3>Harry Potter</h3>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/VyHV0BRtdxo?si=0T8f30rIjxI-I7Sk"
-                title="Harry Potter and the Sorcerer's Stone" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-            <h3>Percy Jackson</h3>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/gA8RMj1l0yg?si=yJ_UaSHNyh2V0r71"
-                title="Percy Jackson and The Olympians" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-            <h3>Sin</h3>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/DTtaFo9bDbs?si=U2OdYyLaGrM2Bp_R"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-        </section>
-        <section id="fanbase">
-            <h2>Let's Join Our Club and Have Some Fun</h2>
-            <section class="joinUs">
-                <div class="form">
-                    <label for="email">Email : </label>
-                    <input id="email" type="email" placeholder="Email">
-                </div>
-                <div class="form">
-                    <label for="name">Full Name : </label>
-                    <input id="name" type="text" placeholder="Name">
-                </div>
-                <div class="form">
-                    <label for="gender">Gender : </label>
-                    <input id="women" type="radio" name="gender" value="women">
-                    <label class="women" for="women">Women</label>
-                    <input id="men" type="radio" name="gender" value="men">
-                    <label class="men" for="men">Men</label>
-                </div>
-                <div class="form">
-                    <label for="book">Favorite Book : </label>
-                    <input id="book" type="text" placeholder="Favorite Book">
-                </div>
-                <div class="message">
-                    <label for="message">Message : </label>
-                    <textarea id="message" rows="10" cols="30"></textarea>
-                </div>
-                <div class="form">
-                    <button onclick="submit()">Submit</button>
-                </div>
-                <p id="error"></p>
-            </section>
+            <div class="movie">
+                <article>
+                    <h3>Harry Potter</h3>
+                    <p>Harry Potter is a film series based on the eponymous novels by British author J. K. Rowling. The
+                        series is produced and distributed by Warner Bros. Pictures and consists of eight fantasy films,
+                        beginning with "Harry Potter and the Philosopher's Stone"</p>
+                </article>
+                <iframe src="https://www.youtube.com/embed/VyHV0BRtdxo?si=0T8f30rIjxI-I7Sk"
+                    title="Harry Potter and the Sorcerer's Stone" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="movie">
+                <iframe src="https://www.youtube.com/embed/gA8RMj1l0yg?si=yJ_UaSHNyh2V0r71"
+                    title="Percy Jackson and The Olympians" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <article>
+                    <h3>Percy Jackson</h3>
+                    <p>Percy Jackson & the Olympians is a two-film series based on the novel series of the same name by
+                        the author Rick Riordan. The series was distributed by 20th Century Fox, produced by 1492
+                        Pictures and consists of two installments.</p>
+                </article>
+            </div>
+            <div class="movie">
+                <article>
+                    <h3>Sin</h3>
+                    <p>Sin or Sin: When Your Lover is Your Own Brother is a 2019 Indonesian romantic film adapted from
+                        the 2017 novel of the same name. The film was directed by Herwin Novianto and produced by Falcon
+                        Pictures, stared Bryan Domani and Mawar de Jongh as the main roles.</p>
+                </article>
+                <iframe src="https://www.youtube.com/embed/DTtaFo9bDbs?si=U2OdYyLaGrM2Bp_R" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
         </section>
     </main>
     <footer>created by: arisarae24</footer>
